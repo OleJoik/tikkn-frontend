@@ -1,0 +1,6 @@
+{
+	"appId": "no.tikkn.www",
+	"appName": "tikkn",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
