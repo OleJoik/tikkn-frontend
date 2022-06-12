@@ -4,7 +4,8 @@ const config: CapacitorConfig = {
   appId: 'no.tikkn.www',
   appName: 'tikkn',
   webDir: 'dist',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  // hideLogs: true,
 };
 
 export default config;

@@ -6,7 +6,10 @@
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "debug-android": "run-p build run-android",
+    "run-android": "cap run android",
+    "open-android": "cap open android"
   },
   "dependencies": {
     "@capacitor-community/background-geolocation": "^1.2.2",

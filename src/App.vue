@@ -1,9 +1,13 @@
 <template>
   <h1>Test</h1>
+
+  <button @click="logClick">Btn</button>
 </template>
 
 <script setup lang="ts">
-
+const logClick = () => {
+  console.log("LOG CLICK LOL")
+}
 </script>
 
 <style>
