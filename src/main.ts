@@ -1,10 +1,13 @@
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
-import router from './router'
+import router from './utilities/Router'
 
-import {printCurrentPosition} from './utilities/GetPosition'
+import { WriteUserData } from './utilities/RealtimeDatabase'
 
 const app = createApp(App)
 
@@ -13,4 +16,7 @@ app.use(router)
 
 app.mount('#app')
 
-printCurrentPosition();
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+WriteUserData();
+

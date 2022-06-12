@@ -1,13 +1,17 @@
 <template>
-  <h1>Test</h1>
-
-  <button @click="logClick">Btn</button>
+  <router-view></router-view>
 </template>
 
 <script setup lang="ts">
-const logClick = () => {
-  console.log("LOG CLICK LOL")
-}
+
+import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
+
+onMounted(() => {
+  router.push({path: "/about"})
+})
 </script>
 
 <style>
